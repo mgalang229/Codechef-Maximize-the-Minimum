@@ -15,6 +15,9 @@ void perform_test() {
 	// observation: remove the K smallest elements in the sequence so that the
 	// minimum value of the sequence will be maximized
 	
+	// this can be done by changing the smallest element with its adjacent maximum element
+	// and spend the remaining operations to change the new smallest element
+	
 	sort(a.begin(), a.end());
 	k = min(k, n - 1); // answer is the (K + 1)-th element
 	cout << a[k] << "\n";
